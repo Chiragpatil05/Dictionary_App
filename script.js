@@ -8,7 +8,7 @@ form.addEventListener("submit",(e)=>{
 
 const getWordInfo = async (word) =>{
     try{
-        resultDiv.innerHTML = "Fetchinf the Word information , please wait"
+        resultDiv.innerHTML = "Fetching the Word information , please wait"
         const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
         const data = await response.json();
     
